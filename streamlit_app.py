@@ -1,6 +1,6 @@
 # Streamlitライブラリをインポート
 import streamlit as st
-
+import random
 # ページ設定（タブに表示されるタイトル、表示幅）
 st.set_page_config(page_title="タイトル", layout="wide")
 
@@ -41,4 +41,3 @@ if st.button('乱数を生成'):
     random_num = random.randint(min_val, max_val)
     st.write(f'生成された乱数: {random_num}')
 
-    
